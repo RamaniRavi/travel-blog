@@ -1,0 +1,194 @@
+<html>
+
+<head>
+  <title>Travel</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background:#cdfffc;
+      color: #cdfffc;
+      font-size: 1.1em;
+      line-height: 1.5;
+      text-align: center;
+      background-image: cross-fade();
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+    li{
+        margin-top: 20px;
+    }
+    h1,
+    h2,
+    h3 {
+      margin: 0;
+      padding: 1em 0;
+    }
+    p {
+      margin: 0;
+      padding: 1em 0;
+    }
+    #showcase {
+      min-height: 450px;
+      color: rgb(16, 24, 26);
+      text-align: center;
+    }
+    #showcase .bg-image {
+      position: absolute;
+      background: #cdfffc;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100%;
+      height: 450px;
+      z-index: -1;
+    }
+    #showcase{
+        background-image: url(./i1.jpg);
+        height: auto;
+        width: auto;
+        
+    }
+    #showcase h1 {
+      padding-top: 100px;
+      padding-bottom: 0;
+    }
+
+    #showcase .content-wrap,
+    #section-a .content-wrap {
+      padding: 0 1.5em;
+    }
+
+    #section-a {
+      background: rgb(58, 27, 34);
+      color: rgb(156, 133, 133);
+      padding-bottom: 2em;
+    }
+
+    #section-b ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    .imgg{
+        display: block;
+        width:100%;
+        height: 250px;
+    }
+
+    #section-b li {
+      background: rgb(177, 164, 164);
+      color: rgba(63, 33, 46, 0.904);
+    }
+
+    #section-c {
+      background: rgb(58, 27, 34);
+      color: rgb(156, 133, 133);
+      padding: 2em;
+    }
+
+    @media (min-width: 700px) {
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+      }
+
+      #section-a .content-text {
+        columns: 2;
+        column-gap: 2em;
+      }
+
+      #section-a .content-text p {
+        padding-top: 0;
+      }
+
+      .content-wrap,
+      #section-b ul {
+        grid-column: 2/4;
+      }
+
+      .box,
+      #main-footer div {
+        grid-column: span 2;
+      }
+
+      #section-b ul {
+        display: flex;
+        justify-content: space-around;
+      }
+
+      #section-b li {
+        width: 31%;
+      }
+    }
+  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <header id="showcase" class="grid">
+    <div class="bg-image"></div>
+    <div class="content-wrap">
+      <h1>Best Place for Travel</h1>
+      <p>Travel while you’re still young. Lose yourself to find your own self. Live like there’s no tomorrow. And whatever you’ll explore today will last a lifetime with you.</p>
+
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section id="section-a" class="grid">
+      <div class="content-wrap">
+        <h2 class="content-title">Travelling world</h2>
+        <div class="content-text">
+          <p>Here amazing tourist places to visit in India before you turn 30. These are not just destinations but fun places that will offer you some crazy experiences of a lifetime. What are you waiting for? It’s time to pack your bags and set on a journey to scratch off a few destinations from your bucket list. It’s time to visit these best tourist places in India to explore yourself on a journey.</p>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="section-b" class="grid">
+      <ul>
+        <li> 
+          <div class="card">
+            <img class="imgg" src="i2.jpg" alt="">
+            <div class="card-content">
+              <h3 class="card-title">Goa – The Official Party Hub</h3>
+              <p>Goa has to be amongst the first few dream places to go in India in your twenties. Attraction places are :Beaches like Vagator, Calangute, Anjuna, Colva, & Benaulim, Fort Aguada, Church of Mae De Deus, Basilica of Bom Jesus, Temple of Bodgeshwar etc.</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="card">
+            <img class="imgg" src="i3.jpg" alt="">
+            <div class="card-content">
+              <h3 class="card-title">Mcleodganj – Heaven Amidst The Hills</h3>
+              <p>The majestic mountains can call tourists to experience the best of what nature has to offer at Mcleodganj – one of the most beautiful places to visit in India. Triund offers a spectacular view of the Dhauladhar ranges. Experience bliss while camping under billions of stars with your friends in Triund. </p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="card">
+            <img class="imgg" src="i4.jpg" alt="">
+            <div class="card-content">
+              <h3 class="card-title">Srinagar – The Gem Of Kashmir</h3>
+              <p>If there is heaven on earth, this it is! Experience its charismatic charm before the natural hits and turmoil spoil it all. Extraction places are : Dal Lake (boating in shikaras & night stays in houseboats), Nishat Bagh, Shalimar Bagh, Tomb of Zin-ul-Abidin, Jama Masjid, Hazratbal Mosque etc. </p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <section id="section-c" class="grid">
+      <div class="content-wrap">
+        <h2 class="content-title">Designed By Ravi Ramani</h2>
+
+      </div>
+    </section>
+
+</body>
+
+</html>
